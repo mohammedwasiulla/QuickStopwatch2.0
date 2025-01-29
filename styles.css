@@ -1,0 +1,159 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Stopwatch Container */
+.stopwatch-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 1s ease-in-out;
+    text-align: center; /* Ensures everything inside is center-aligned */
+}
+
+/* Stopwatch Heading */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Time Display */
+/* Time Display */
+.time-display {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;  /* Centers the text horizontally */
+    align-items: center;      /* Centers the text vertically */
+    text-align: center;       /* Ensures text is centered */
+    width: 100%;              /* Takes full width for proper alignment */
+}
+
+
+
+/* Centered Input Field */
+/* Center the Input Field */
+#time-input {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;  /* Ensures text is centered */
+    width: 200px;        /* Adjust width as needed */
+    padding: 10px;
+    margin: 20px auto;   /* Centers horizontally */
+    display: block;      /* Ensures it takes full width for centering */
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    width: 100px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#startBtn {
+    background: linear-gradient(135deg, #00c853, #b2ff59);
+    color: #fff;
+}
+
+#stopBtn {
+    background: linear-gradient(135deg, #ff1744, #ff5252);
+    color: white;
+}
+
+#resetBtn {
+    background: linear-gradient(135deg, #ff9100, #ffcc80);
+    color: black;
+}
+
+/* Hover Effects */
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Animation for Fade-in Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .stopwatch-container {
+        width: 95%;
+    }
+    button {
+        width: 90px;
+    }
+}
+.welcome-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(156, 222, 252);
+    border-radius: 15px;
+    width: 50vw;
+    max-width: 400px;
+  }
+  
+  .welcome-container h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .welcome-container button {
+    padding: 10px 20px;
+    background-color: rgb(244, 242, 153);
+    cursor: pointer;
+  }
+  
+  .welcome-container button:hover {
+    background-color: rgb(224, 222, 100);
+  }

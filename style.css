@@ -1,0 +1,103 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: url('background.jpg') no-repeat center center fixed;  /* Replace with your background image */
+    background-size: cover;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Welcome Container */
+.welcome-container {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Blurs the background */
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffcc00; /* Accent color for the heading */
+}
+
+/* Paragraph */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+/* Button */
+#go-to-stopwatch {
+    font-size: 1.2em;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00c853, #b2ff59); /* Green gradient background */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+#go-to-stopwatch:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-container {
+        width: 90%;  /* Ensure the container takes up more width on tablets and smaller screens */
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.2em; /* Slightly smaller heading on mid-sized screens */
+    }
+
+    p {
+        font-size: 1.1em; /* Slightly smaller paragraph text */
+    }
+
+    #go-to-stopwatch {
+        font-size: 1.1em; /* Slightly smaller button font size */
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile Design */
+@media (max-width: 480px) {
+    .welcome-container {
+        width: 95%;  /* Ensure the container takes up most of the screen on smaller devices */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8em; /* Smaller heading for mobile screens */
+    }
+
+    p {
+        font-size: 1em; /* Smaller paragraph text */
+    }
+
+    #go-to-stopwatch {
+        font-size: 1em; /* Smaller button font size */
+        padding: 10px 20px;
+    }
+}
